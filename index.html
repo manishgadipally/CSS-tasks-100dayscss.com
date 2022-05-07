@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <style>
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #d48e56;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 300px;
+  background-color: #ffff;
+  border-radius: 4px;
+  box-shadow: rgb(61, 58, 58);
+}
+.posts,.likes,.follower {
+    background-color: #f5e8df;
+    width: 120px;
+    height: 99px;
+    margin-bottom: 1px;
+    color:#877462;
+    font-size: 16px;
+    text-align: center;
+    cursor:pointer;
+}
+.posts:hover, .likes:hover, .follower:hover {
+    background-color: #dba671;
+}
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.number {
+    font-size: 20px;
+    font-weight: bold;
+}
+.button {
+    width: 150px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #8f7e6d;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #786450;
+    color: #ffff;
+}
+.buttons-wrapper {
+    left: 15px;
+    position: absolute;
+    bottom: 40px;
+}
+.profile-name {
+    position: absolute;
+    top: 105px;
+    left: 45px;
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #8f7e6d;
+}
+.occupation {
+    font-size: 12px;
+}
+#circle{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border:1px solid black;
+    line-height: 65px;
+    text-align: center;
+		cursor: pointer;
+}
+.profile-photo {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+  <div class="center">
+      <div class="details-wrapper">
+          <div class="posts">
+              <p class="number">523</p>
+              <label class="label-text">Posts</label>
+          </div>
+          <div class="likes">
+            <p class="number">1387</p>
+            <label class="label-text">Likes</label>
+        </div>
+        <div class="follower">
+            <p class="number">146</p>
+            <label class="label-text">Follower</label>
+        </div>
+      </div>
+      <div class="buttons-wrapper">
+        <button class="button button1">Follow</button>
+        <button class="button button1">Message</button>
+      </div>
+      <div class="profile-name">
+          <span class="name">Jessica Potter</span>
+          <p class="occupation">Visual Artist</p>
+      </div>
+<div class="profile-photo">
+    <div id="circle">
+        <img src="https://www.dreamstime.com/flat-male-avatar-image-beard-hairstyle-businessman-profile-icon-vector-image179285629">
+    </div>
+</div>
+  </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+</script>
+</html>
